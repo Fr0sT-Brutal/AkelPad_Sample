@@ -1,2 +1,0 @@
-AkelPad_Sample
-==============

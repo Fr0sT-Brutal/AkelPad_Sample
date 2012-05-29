@@ -1,0 +1,45 @@
+*****************************************************************
+***                Sample AkelPad plugin                      ***
+*****************************************************************
+
+2012 Fr0sT
+
+
+*** Description ***
+
+Just a sample pattern of Delphi plugin for AkelPad
+
+
+*** Features ***
+
+Anything you implement ;)
+
+
+*** Functions ***
+
+Sample::Main
+Main function
+
+Sample::Err
+Show error message box
+
+Sample::Warn
+Show warning message box
+
+
+*** External calls ***
+
+Call("Sample::Main")
+	Shows info message box
+
+Call("Sample::Main", "STRING")
+	Shows info message box with "STRING" in caption
+
+Call("Sample::Err", "STRING")
+	Shows error message box with "STRING" in caption
+
+Call("Sample::Warn", "STRING")
+	Shows warning message box with "STRING" in caption
+
+*** Credits ***
+
