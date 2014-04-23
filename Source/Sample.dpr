@@ -1,4 +1,4 @@
-﻿        (*****************************************
+        (*****************************************
             Sample plugin for AkelPad editor
                          © Fr0sT
 
@@ -14,7 +14,6 @@
  ???
    ---
 }
-
 library Sample;
 
 {$R 'MainIcon.res' 'MainIcon.rc'}
@@ -22,8 +21,8 @@ library Sample;
 
 uses
   Windows, Messages, SysUtils,
-  AkelDLL_h in '#AkelDefs\AkelDLL_h.pas',
-//  AkelEdit_h in '#AkelDefs\AkelEdit_h.pas',
+  AkelDLL in '#AkelDefs\AkelDLL.pas',
+  AkelEdit in '#AkelDefs\AkelEdit.pas',
   Lang in 'Lang.pas';
 
 // Global constants
@@ -95,7 +94,7 @@ end;
 // Identification (required)
 procedure DllAkelPadID(var pv: TPLUGINVERSION); cdecl;
 begin
-  pv.dwAkelDllVersion := AkelDLL;
+  pv.dwAkelDllVersion := AkelDLLVer;
   pv.dwExeMinVersion3x := MakeIdentifier(-1, -1, -1, -1);
   pv.dwExeMinVersion4x := MakeIdentifier(4, 7, 0, 0);
   pv.pPluginName := PAnsiChar(PluginName);
